@@ -1,0 +1,4 @@
+Name:곰곰 국내산 절단대파, 500g, 1개
+Price:2500
+Tag:대파
+Image:대파2.jpg

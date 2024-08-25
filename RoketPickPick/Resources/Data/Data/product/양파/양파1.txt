@@ -1,0 +1,4 @@
+Name:곰곰 국내산 양파(햇), 3kg, 1개
+Price:3980
+Tag:양파
+Image:양파1.jpg

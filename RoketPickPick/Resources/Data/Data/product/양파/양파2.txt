@@ -1,0 +1,4 @@
+Name:국내산 양파, 5kg, 1개
+Price:6610
+Tag:양파
+Image:양파2.jpg

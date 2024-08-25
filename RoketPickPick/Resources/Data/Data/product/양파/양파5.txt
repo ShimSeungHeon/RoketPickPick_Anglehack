@@ -1,0 +1,4 @@
+Name:국내산 양파 (햇), 1.2kg, 1개
+Price:2460
+Tag:양파
+Image:양파5.jpg

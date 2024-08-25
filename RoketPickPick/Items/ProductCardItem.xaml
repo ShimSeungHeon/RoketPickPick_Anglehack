@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="RoketPickPick.Items.ProductCardItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RoketPickPick.Items"
+             mc:Ignorable="d" 
+             MaxWidth="250"
+             MaxHeight="400"
+             Background="White"
+             >
+
+    <Button BorderThickness="0.1"
+            BorderBrush="DimGray"
+            Background="{Binding Product.BackColor, RelativeSource={RelativeSource AncestorType=local:ProductCardItem}}"
+            Margin="2"
+            Command="{Binding Command, RelativeSource={RelativeSource AncestorType=local:ProductCardItem}}"
+            CommandParameter="{Binding Product, RelativeSource={RelativeSource AncestorType=local:ProductCardItem}}">
+        <Grid Margin="10 5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0"
+                   Source="{Binding Product.ImagePath, RelativeSource={RelativeSource AncestorType=local:ProductCardItem}}"
+                   />
+
+            <TextBlock Grid.Row="1"
+                       Text="{Binding Product.ProductName, RelativeSource={RelativeSource AncestorType=local:ProductCardItem}}"
+                       FontSize="13"
+                       TextWrapping="Wrap"
+                       MaxWidth="250"
+                       />
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Text="{Binding Product.PriceText, RelativeSource={RelativeSource AncestorType=local:ProductCardItem}}" Foreground="Crimson" FontWeight="Bold"
+                           FontSize="17"/>
+                <!--<TextBlock Grid.Column="1" Text="{Binding Price}"/>-->
+
+            </Grid>
+
+            <TextBlock Grid.Row="3" Text="내일(일) 새벽 도착 보장"
+                        Margin="3" FontSize="13" Foreground="Green"/>
+
+            <StackPanel Grid.Row="4" Orientation="Horizontal">
+                <TextBlock Grid.Row="4" Text="{Binding Product.FilledStarText, RelativeSource={RelativeSource AncestorType=local:ProductCardItem}}" 
+                           FontSize="13" 
+                           Margin="0"
+                       Foreground="Orange"/>
+                <TextBlock Grid.Row="4" Text="{Binding Product.EmptyStarText, RelativeSource={RelativeSource AncestorType=local:ProductCardItem}}" 
+                           FontSize="13" 
+                           Margin="0"
+                       Foreground="Gray"/>
+                <TextBlock Grid.Row="4" Text="{Binding Product.ReviewText, RelativeSource={RelativeSource AncestorType=local:ProductCardItem}}" 
+                           FontSize="13" 
+                           Margin="2 0"
+                       Foreground="DimGray"/>
+            </StackPanel>
+        </Grid>
+    </Button>
+</UserControl>

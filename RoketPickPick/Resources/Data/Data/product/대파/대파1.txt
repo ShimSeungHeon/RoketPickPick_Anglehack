@@ -1,0 +1,4 @@
+Name:흙대파, 1kg, 1개
+Price:3490
+Tag:파
+Image:대파1.jpg
