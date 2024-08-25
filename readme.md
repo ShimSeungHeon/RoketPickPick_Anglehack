@@ -1,5 +1,3 @@
-여기 AI 파트에 대한 내용을 추가했습니다:
-
 ---
 
 ## 🔍 로켓키친의 기술적 특징
@@ -70,9 +68,6 @@
 
 - **문의사항:** Jinnya8166@gmail.com
 - **GitHub 리포지토리:https://github.com/ShimSeungHeon/RoketPickPick_Anglehack**
-
-
-Here’s the English version of the provided README:
 
 ---
 
